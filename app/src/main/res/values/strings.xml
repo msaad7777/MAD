@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Mohammed_Badruddin_Saad_COMP304_001_HandsOn_Test1_S24</string>
+    <string name="brain_challenge">Brain Challenge</string>
+    <string name="lose_things">Lose things</string>
+    <string name="remember_names">Remember names</string>
+    <string name="learn_things_quickly">Learn things quickly</string>
+    <string name="keep_track_of_multiple_things">Keep track of multiple things</string>
+    <string name="next">Next</string>
+    <string name="next_button_text">NEXT</string>
+    <string name="company_logo_description">Company Logo</string>
+    <string name="zigzag_line">Zigzag Line</string>
+    <string name="enter_button_text">Enter</string>
+    <string name="image_button_description">Image Button</string>
+    <string name="brain_challenge_title">Brain Challenge</string>
+    <string name="brain_challenge_subtitle">Challenge your brain with scientifically designed exercises</string>
+    <string name="select_exercise_button">Select Exercise</string>
+    <string-array name="y_coordinates">
+        <item>0</item>
+        <item>200</item>
+        <item>400</item>
+        <item>600</item>
+        <item>800</item>
+        <item>1000</item>
+    </string-array>
+</resources>
