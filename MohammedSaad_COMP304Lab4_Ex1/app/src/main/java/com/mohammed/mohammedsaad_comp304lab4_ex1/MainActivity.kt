@@ -1,5 +1,6 @@
 package com.mohammed.mohammedsaad_comp304lab4_ex1
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
