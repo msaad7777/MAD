@@ -18,7 +18,7 @@ class LandmarkMapActivity : FragmentActivity(), OnMapReadyCallback {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_landmark_map)
 
-        landmark = intent.getSerializableExtra("landmark") as Landmark
+        landmark = intent.extras?.getParcelable("landmark")!!
 
         val mapFragment = supportFragmentManager
             .findFragmentById(R.id.map) as SupportMapFragment

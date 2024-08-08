@@ -1,4 +1,24 @@
 <resources>
+    <!-- Application name -->
     <string name="app_name">COMP304Lab4_Ex1</string>
-    <string name="google_maps_key" translatable="false">YOUR_API_KEY_HERE</string>
+
+    <!-- Landmark Type Labels -->
+    <string name="landmark_type_old_buildings">Old Buildings</string>
+    <string name="landmark_type_museums">Museums</string>
+    <string name="landmark_type_attractions">Attractions</string>
+
+    <!-- Other Labels -->
+    <string name="label_select_landmark_type">Select Landmark Type</string>
+    <string name="label_select_landmark">Select Landmark</string>
+    <string name="label_loading">Loading&#8230;</string>
+    <string name="label_landmark_address">Address</string>
+    <string name="label_landmark_coordinates">Coordinates</string>
+
+    <!-- Error Messages -->
+    <string name="error_failed_to_load_landmarks">Failed to load landmarks. Please try again.</string>
+    <string name="error_no_landmarks_found">No landmarks found for the selected type.</string>
+
+    <!-- Other Strings -->
+    <!-- Add any other necessary strings here -->
 </resources>
+

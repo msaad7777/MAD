@@ -58,7 +58,7 @@ dependencies {
     implementation(libs.androidx.ui.graphics)
     implementation(libs.androidx.ui.tooling.preview)
     implementation(libs.androidx.material3)
-    implementation("androidx.recyclerview:recyclerview:1.3.2")
+    implementation("androidx.recyclerview:recyclerview:1.3.2") // Add RecyclerView dependency
     implementation("androidx.appcompat:appcompat:1.7.0")
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
