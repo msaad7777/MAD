@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">NurseApp</string>
+    <string name="login">Login</string>
+    <string name="nurse_id">Nurse ID</string>
+    <string name="password">Password</string>
+    <string name="selected_exercises">Selected exercises:</string>
+</resources>

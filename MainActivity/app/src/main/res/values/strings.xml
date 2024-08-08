@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">LeaseOrRentHome</string>
+    <string name="enter_button_text">Enter</string>
+    <string name="list_of_apartments">List of Apartments</string>
+    <string name="company_logo_description">Company Logo</string>
+    <string name="detached_home_activity_title">Detached Home Activity</string>
+    <string name="semi_detached_home_activity_title">Semi-Detached Home Activity</string>
+    <string name="condominium_activity_title">Condominium Activity</string>
+    <string name="townhouse_activity_title">Townhouse Activity</string>
+</resources>

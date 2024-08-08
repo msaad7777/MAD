@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">MohammedSaad_COMP304Lab2_Ex2</string>
+    <string name="hint_type_message">Type a message</string>
+    <string name="button_send">Send</string>
+    <string name="message_placeholder">Lifecycle messages will appear here</string>
+    <string name="ai_activity_lifecycle">AI Activity Lifecycle:</string>
+    <string name="vr_activity_lifecycle">VR Activity Lifecycle:</string>
+</resources>
