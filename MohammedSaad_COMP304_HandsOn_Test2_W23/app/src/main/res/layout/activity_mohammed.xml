@@ -8,31 +8,35 @@
     <RadioButton
         android:id="@+id/symbolRadioButton"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="AAPL (Apple Inc.)" />
+        android:layout_height="48dp"
+        android:text="@string/symbol_radio_text"
+        android:padding="8dp"
+        android:minHeight="48dp" />
 
     <RadioButton
         android:id="@+id/companyNameRadioButton"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Apple Inc." />
+        android:layout_height="48dp"
+        android:text="@string/company_radio_text"
+        android:padding="8dp"
+        android:minHeight="48dp" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Insert Stocks"
+        android:text="@string/insert_stocks_button"
         android:onClick="insertStocks" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Display Stock Info"
+        android:text="@string/display_stock_info_button"
         android:onClick="displayStockInfo" />
 
     <TextView
         android:id="@+id/stockInfoTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Stock Information"
+        android:text="@string/stock_info_text"
         android:paddingTop="16dp" />
 </LinearLayout>

@@ -4,4 +4,9 @@
     <string name="stock_info_format">Symbol: %1$s\nCompany: %2$s\nQuote: %3$.2f</string>
     <string name="broadcast_stock_info_format">Symbol: %1$s, Company: %2$s, Quote: %3$.2f</string>
     <string name="stocks_inserted">Stocks inserted</string>
+    <string name="symbol_radio_text">AAPL (Apple Inc.)</string>
+    <string name="company_radio_text">Apple Inc.</string>
+    <string name="insert_stocks_button">Insert Stocks</string>
+    <string name="display_stock_info_button">Display Stock Info</string>
+    <string name="stock_info_text">Stock Information</string>
 </resources>
