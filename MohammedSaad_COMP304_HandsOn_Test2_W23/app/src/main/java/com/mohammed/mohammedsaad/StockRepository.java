@@ -6,7 +6,7 @@ import androidx.lifecycle.LiveData;
 
 public class StockRepository {
 
-    private StockInfoDao stockInfoDao;
+    private final StockInfoDao stockInfoDao;  // Marked as final
 
     public StockRepository(Application application) {
         StockDatabase db = StockDatabase.getDatabase(application);

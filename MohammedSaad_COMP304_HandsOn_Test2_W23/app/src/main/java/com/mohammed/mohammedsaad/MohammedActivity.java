@@ -35,21 +35,27 @@ public class MohammedActivity extends AppCompatActivity {
         stockViewModel.insert(stock1);
         stockViewModel.insert(stock2);
 
-        Toast.makeText(this, "Stocks inserted", Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, getString(R.string.stocks_inserted), Toast.LENGTH_SHORT).show();
     }
 
     public void displayStockInfo(View view) {
         if (symbolRadioButton.isChecked()) {
             stockViewModel.getStockBySymbol("AAPL").observe(this, stockInfo -> {
                 if (stockInfo != null) {
-                    stockInfoTextView.setText("Symbol: " + stockInfo.getStockSymbol() + "\nCompany: " + stockInfo.getCompanyName() + "\nQuote: " + stockInfo.getStockQuote());
+                    stockInfoTextView.setText(getString(R.string.stock_info_format,
+                            stockInfo.getStockSymbol(),
+                            stockInfo.getCompanyName(),
+                            stockInfo.getStockQuote()));
                     sendBroadcast(stockInfo);
                 }
             });
         } else if (companyNameRadioButton.isChecked()) {
             stockViewModel.getStockByCompanyName("Apple Inc.").observe(this, stockInfo -> {
                 if (stockInfo != null) {
-                    stockInfoTextView.setText("Symbol: " + stockInfo.getStockSymbol() + "\nCompany: " + stockInfo.getCompanyName() + "\nQuote: " + stockInfo.getStockQuote());
+                    stockInfoTextView.setText(getString(R.string.stock_info_format,
+                            stockInfo.getStockSymbol(),
+                            stockInfo.getCompanyName(),
+                            stockInfo.getStockQuote()));
                     sendBroadcast(stockInfo);
                 }
             });
@@ -58,7 +64,10 @@ public class MohammedActivity extends AppCompatActivity {
 
     private void sendBroadcast(StockInfo stockInfo) {
         Intent intent = new Intent("com.mohammed.mohammedsaad.STOCK_INFO_BROADCAST");
-        intent.putExtra("stock_info", "Symbol: " + stockInfo.getStockSymbol() + ", Company: " + stockInfo.getCompanyName() + ", Quote: " + stockInfo.getStockQuote());
+        intent.putExtra("stock_info", getString(R.string.broadcast_stock_info_format,
+                stockInfo.getStockSymbol(),
+                stockInfo.getCompanyName(),
+                stockInfo.getStockQuote()));
         sendBroadcast(intent);
     }
 }

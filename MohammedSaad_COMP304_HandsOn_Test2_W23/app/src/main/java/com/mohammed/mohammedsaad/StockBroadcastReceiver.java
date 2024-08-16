@@ -9,9 +9,13 @@ public class StockBroadcastReceiver extends BroadcastReceiver {
 
     @Override
     public void onReceive(Context context, Intent intent) {
-        if (intent != null && intent.getAction().equals("com.mohammed.mohammedsaad.STOCK_INFO_BROADCAST")) {
+        if (intent != null && "com.mohammed.mohammedsaad.STOCK_INFO_BROADCAST".equals(intent.getAction())) {
             String stockInfo = intent.getStringExtra("stock_info");
-            Toast.makeText(context, "Received: " + stockInfo, Toast.LENGTH_LONG).show();
+            if (stockInfo != null) {
+                Toast.makeText(context, "Received: " + stockInfo, Toast.LENGTH_LONG).show();
+            } else {
+                Toast.makeText(context, "No stock info received", Toast.LENGTH_LONG).show();
+            }
         }
     }
 }

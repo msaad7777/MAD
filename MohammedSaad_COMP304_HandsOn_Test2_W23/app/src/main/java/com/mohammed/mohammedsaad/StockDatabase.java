@@ -14,7 +14,6 @@ public abstract class StockDatabase extends RoomDatabase {
 
     // Singleton instance
     private static volatile StockDatabase INSTANCE;
-
     // ExecutorService with a fixed thread pool for database write operations
     private static final int NUMBER_OF_THREADS = 4;
     static final ExecutorService databaseWriteExecutor =

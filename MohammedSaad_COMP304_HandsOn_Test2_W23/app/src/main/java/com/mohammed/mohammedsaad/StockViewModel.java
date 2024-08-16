@@ -7,7 +7,7 @@ import androidx.lifecycle.LiveData;
 
 public class StockViewModel extends AndroidViewModel {
 
-    private StockRepository repository;
+    private final StockRepository repository; // Marked as final
 
     public StockViewModel(Application application) {
         super(application);

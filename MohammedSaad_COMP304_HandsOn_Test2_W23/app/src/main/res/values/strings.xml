@@ -1,4 +1,7 @@
 <resources>
     <string name="app_name">MohammedSaad_COMP304_HandsOn_Test2_W23</string>
     <string name="stock_info">Stock Information</string>
+    <string name="stock_info_format">Symbol: %1$s\nCompany: %2$s\nQuote: %3$.2f</string>
+    <string name="broadcast_stock_info_format">Symbol: %1$s, Company: %2$s, Quote: %3$.2f</string>
+    <string name="stocks_inserted">Stocks inserted</string>
 </resources>
