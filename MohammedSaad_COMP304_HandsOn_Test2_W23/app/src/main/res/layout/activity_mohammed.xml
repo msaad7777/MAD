@@ -5,38 +5,66 @@
     android:orientation="vertical"
     android:padding="16dp">
 
-    <RadioButton
-        android:id="@+id/symbolRadioButton"
+    <TextView
+        android:id="@+id/titleTextView"
         android:layout_width="wrap_content"
-        android:layout_height="48dp"
-        android:text="@string/symbol_radio_text"
-        android:padding="8dp"
-        android:minHeight="48dp" />
-
-    <RadioButton
-        android:id="@+id/companyNameRadioButton"
-        android:layout_width="wrap_content"
-        android:layout_height="48dp"
-        android:text="@string/company_radio_text"
-        android:padding="8dp"
-        android:minHeight="48dp" />
+        android:layout_height="wrap_content"
+        android:text="@string/stock_information_title"
+        android:textStyle="bold"
+        android:textSize="24sp" />
 
     <Button
+        android:id="@+id/insertStocksButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/insert_stocks_button"
         android:onClick="insertStocks" />
 
+    <TextView
+        android:id="@+id/selectStockSymbolTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/select_stock_symbol" />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/symbolRadioButtonGOOGL"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/symbol_google"
+            android:layout_marginTop="8dp" />
+
+        <RadioButton
+            android:id="@+id/symbolRadioButtonAMZN"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/symbol_amazon"
+            android:layout_marginTop="8dp" />
+
+        <RadioButton
+            android:id="@+id/symbolRadioButtonSSNLF"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/symbol_samsung"
+            android:layout_marginTop="8dp" />
+
+    </RadioGroup>
+
     <Button
+        android:id="@+id/displayStockInfoButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/display_stock_info_button"
-        android:onClick="displayStockInfo" />
+        android:onClick="displayStockInfo"
+        android:layout_marginTop="16dp" />
 
     <TextView
         android:id="@+id/stockInfoTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/stock_info_text"
-        android:paddingTop="16dp" />
+        android:layout_marginTop="16dp" />
 </LinearLayout>

@@ -1,12 +1,14 @@
 <resources>
-    <string name="app_name">MohammedSaad_COMP304_HandsOn_Test2_W23</string>
-    <string name="stock_info">Stock Information</string>
-    <string name="stock_info_format">Symbol: %1$s\nCompany: %2$s\nQuote: %3$.2f</string>
-    <string name="broadcast_stock_info_format">Symbol: %1$s, Company: %2$s, Quote: %3$.2f</string>
+    <string name="app_name">SampleFinalTest</string>
+    <string name="stock_information_title">Stock Information</string>
+    <string name="insert_stocks_button">INSERT STOCKS (HARDCODE)</string>
+    <string name="select_stock_symbol">Select stock symbol:</string>
+    <string name="symbol_google">GOOGL</string>
+    <string name="symbol_amazon">AMZN</string>
+    <string name="symbol_samsung">SSNLF</string>
+    <string name="display_stock_info_button">DISPLAY STOCK INFO</string>
+    <string name="stock_info_text">Company Name: [Company Name]\nStock Quote: [Stock Quote]</string>
     <string name="stocks_inserted">Stocks inserted</string>
-    <string name="symbol_radio_text">AAPL (Apple Inc.)</string>
-    <string name="company_radio_text">Apple Inc.</string>
-    <string name="insert_stocks_button">Insert Stocks</string>
-    <string name="display_stock_info_button">Display Stock Info</string>
-    <string name="stock_info_text">Stock Information</string>
+    <string name="stock_info_format">Company Name: %1$s\nStock Quote: %2$.2f</string>
+    <string name="broadcast_stock_info_format">Stock Info received:\nCompany Name: %1$s\nStock Quote: %2$.2f</string>
 </resources>

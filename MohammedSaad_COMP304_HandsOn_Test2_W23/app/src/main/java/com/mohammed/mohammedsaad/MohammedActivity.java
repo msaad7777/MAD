@@ -1,3 +1,4 @@
+// Student Number - 301313784
 package com.mohammed.mohammedsaad;
 
 import android.content.Intent;
@@ -14,8 +15,9 @@ public class MohammedActivity extends AppCompatActivity {
 
     private StockViewModel stockViewModel;
     private TextView stockInfoTextView;
-    private RadioButton symbolRadioButton;
-    private RadioButton companyNameRadioButton;
+    private RadioButton symbolRadioButtonAMZN;
+    private RadioButton symbolRadioButtonGOOGL;
+    private RadioButton symbolRadioButtonSSNLF;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,23 +26,26 @@ public class MohammedActivity extends AppCompatActivity {
 
         stockViewModel = new ViewModelProvider(this).get(StockViewModel.class);
         stockInfoTextView = findViewById(R.id.stockInfoTextView);
-        symbolRadioButton = findViewById(R.id.symbolRadioButton);
-        companyNameRadioButton = findViewById(R.id.companyNameRadioButton);
+        symbolRadioButtonAMZN = findViewById(R.id.symbolRadioButtonAMZN);
+        symbolRadioButtonGOOGL = findViewById(R.id.symbolRadioButtonGOOGL);
+        symbolRadioButtonSSNLF = findViewById(R.id.symbolRadioButtonSSNLF);
     }
 
     public void insertStocks(View view) {
-        StockInfo stock1 = new StockInfo("AAPL", "Apple Inc.", 150.00);
-        StockInfo stock2 = new StockInfo("GOOGL", "Alphabet Inc.", 2800.00);
+        StockInfo stock1 = new StockInfo("AMZN", "Amazon", 990.00);
+        StockInfo stock2 = new StockInfo("GOOGL", "Google", 2800.00);
+        StockInfo stock3 = new StockInfo("SSNLF", "Samsung", 1200.00);
 
         stockViewModel.insert(stock1);
         stockViewModel.insert(stock2);
+        stockViewModel.insert(stock3);
 
         Toast.makeText(this, getString(R.string.stocks_inserted), Toast.LENGTH_SHORT).show();
     }
 
     public void displayStockInfo(View view) {
-        if (symbolRadioButton.isChecked()) {
-            stockViewModel.getStockBySymbol("AAPL").observe(this, stockInfo -> {
+        if (symbolRadioButtonAMZN.isChecked()) {
+            stockViewModel.getStockBySymbol("AMZN").observe(this, stockInfo -> {
                 if (stockInfo != null) {
                     stockInfoTextView.setText(getString(R.string.stock_info_format,
                             stockInfo.getStockSymbol(),
@@ -49,8 +54,18 @@ public class MohammedActivity extends AppCompatActivity {
                     sendBroadcast(stockInfo);
                 }
             });
-        } else if (companyNameRadioButton.isChecked()) {
-            stockViewModel.getStockByCompanyName("Apple Inc.").observe(this, stockInfo -> {
+        } else if (symbolRadioButtonGOOGL.isChecked()) {
+            stockViewModel.getStockBySymbol("GOOGL").observe(this, stockInfo -> {
+                if (stockInfo != null) {
+                    stockInfoTextView.setText(getString(R.string.stock_info_format,
+                            stockInfo.getStockSymbol(),
+                            stockInfo.getCompanyName(),
+                            stockInfo.getStockQuote()));
+                    sendBroadcast(stockInfo);
+                }
+            });
+        } else if (symbolRadioButtonSSNLF.isChecked()) {
+            stockViewModel.getStockBySymbol("SSNLF").observe(this, stockInfo -> {
                 if (stockInfo != null) {
                     stockInfoTextView.setText(getString(R.string.stock_info_format,
                             stockInfo.getStockSymbol(),
